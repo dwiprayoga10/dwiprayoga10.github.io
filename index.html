@@ -1,51 +1,46 @@
-<link rel="stylesheet" href="Style.css">
-<script src="Script.js"></script>
-<header class="wrap">
-    <h1>ULA IKA HUMUL</h1>
-    <p class="score">SKOR: <span id="score_value">0</span></p>
-</header>
-<canvas class="wrap" id="snake" width="320" height="320" tabindex="1"></canvas>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Ndess</title>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"/>
+   <link rel="stylesheet" href="Style.css">
+</head>
+  <body>
+    <div class="kalkulator">
+      <div class="tampilan">
+        <input type="text" placeholder="0" id="input" disabled />
+      </div>
+      <div class="buttons">
+        <!-- Full Erase -->
+        <input type="button" value="AC" id="clear" />
+        <!-- Erase Single Value -->
+        <input type="button" value="HPS" id="erase" />
+        <input type="button" value="/" class="input-button" />
+        <input type="button" value="*" class="input-button" />
 
-<!-- Game Over Screen -->
-<div id="gameover">
-    <h2>Innalillahi</h2>
-    <p>pencet <span style="background-color: #FFFFFF; color: #000000">spasi</span> nggo mulai maning</p>
-    <a id="newgame_gameover">Mulai</a>
-    <a id="setting_gameover">Pengaturan</a>
-</div>
+        <input type="button" value="7" class="input-button" />
+        <input type="button" value="8" class="input-button" />
+        <input type="button" value="9" class="input-button" />
+        <input type="button" value="-" class="input-button" />
 
-<!-- Setting screen -->
-<div id="setting">
-    <h2>Pengaturan</h2>
-    
-    <a id="newgame_setting">Mulai maning</a>
-    
-    <p>Speed:
-        <input id="speed1" type="radio" name="speed" value="120" checked/>
-        <label for="speed1">Woles</label>
-        <input id="speed2" type="radio" name="speed" value="75"/>
-        <label for="speed2">Lumayan</label>
-        <input id="speed3" type="radio" name="speed" value="35"/>
-        <label for="speed3">Ngegas</label>
-    </p>
-    
-    <p>Wall:
-        <input id="wallon" type="radio" name="wall" value="1" checked/>
-        <label for="wallon">Urip</label>
-        <input id="walloff" type="radio" name="wall" value="0"/>
-        <label for="walloff">Mati</label>
-    </p>
+        <input type="button" value="6" class="input-button" />
+        <input type="button" value="5" class="input-button" />
+        <input type="button" value="4" class="input-button" />
+        <input type="button" value="+" class="input-button" />
 
-</div>
+        <input type="button" value="1" class="input-button" />
+        <input type="button" value="2" class="input-button" />
+        <input type="button" value="3" class="input-button" />
 
-<!-- Main Menu Screen -->
-<div id="menu">
-    <h2>ULA ULANAN</h2>
-
-    <a id="newgame_menu">Mulai Main</a>
-    <a id="setting_menu">Pengaturan</a>
-</div>
-
-<!--
-<div id="debug" style="font-size: 16px; color: #FFF;"></div>
--->
+        <input type="button" value="=" id="equal" />
+        <input type="button" value="0" class="input-button" />
+        <input type="button" value="." class="input-button" />
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
