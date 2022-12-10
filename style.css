@@ -178,8 +178,8 @@ html {
 .banner-image .content img {
     margin: 2rem auto;
     display: block;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 
 
@@ -191,8 +191,8 @@ html {
 
 .navbar-brand img {
     margin-top: 0;
-    width: 76px;
-    height: 76px;
+    width: 50px;
+    height: 50px;
 }
 
 .navbar {
@@ -215,7 +215,7 @@ html {
 }
 
 .content .intro-text {
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 600;
     color: rgb(52, 58, 64);
 }
@@ -226,7 +226,7 @@ html {
 }
 
 .content .intro-text .description {
-    font-size: 1rem;
+    font-size: 15px;
     margin-top: 28px;
     line-height: 1.4;
 }
