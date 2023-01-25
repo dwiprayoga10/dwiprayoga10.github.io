@@ -2,9 +2,9 @@ const autotype = document.getElementById('autoTypingText');
 
 let typewriter = new Typewriter(autotype, {
     strings: [
-        "Musik",
-        "Game",
-        "Kamu kiwkiw..."
+        "Against all ods",
+        "All is Well",
+        "Never Give Up"
     ],
     autoStart: true,
     loop: true,
